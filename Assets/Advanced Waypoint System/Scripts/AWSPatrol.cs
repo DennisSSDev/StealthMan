@@ -17,6 +17,8 @@ namespace Worq
         public WaypointRoute group;
         [HideInInspector] public int groupID = 0;
 
+        public NavMeshAgent GetAgent() { return agent; }
+
         //patrol settings
         [Header("Patrol")] [Space(10)] [Tooltip("Minimum amount of time to wait before moving to next patrol point")]
         public float minPatrolWaitTime = 1f;
